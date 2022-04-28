@@ -19,7 +19,7 @@ const userSchema = new Schema<Iuser>({
   email: { type: String, required: true },
   name: { type: String, required: true },
   password: { type: String, required: true },
-  address: { type: Schema.Types.ObjectId, required: true, ref: 'IuserAddress' }
+  address: { type: Schema.Types.ObjectId, required: true, ref: 'userAddressSchema' }
 });
 
 const userAddressSchema = new Schema<IuserAddress>({

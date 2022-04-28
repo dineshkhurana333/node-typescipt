@@ -3,7 +3,7 @@ import { HttpError } from 'http-errors';
 
 const app: Application = express();
 
-app.get('/', (req: Request, res: Response, next: NextFunction): Response => {
+app.get('/', (req: Request, res: Response): Response => {
     return res.send({ message: 'hello from typescript' })
 });
 
